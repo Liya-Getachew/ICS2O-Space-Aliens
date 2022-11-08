@@ -1,0 +1,20 @@
+/* global Phaser */
+
+// Copyright (c) 2022 liya getachew All rights reserved
+//
+// Created by: liya getachew
+// Created on: Nov 8 2022
+// This is the Phaser3 game configuration file
+
+/**
+* Start Phaser Game.
+*/
+const config = {
+type: Phaser.AUTO,
+width: 1920,
+height: 1080,
+backgroundColor: 0x5f6e7a
+}
+
+const game = new Phaser.Game(config)
+console.log(game)
