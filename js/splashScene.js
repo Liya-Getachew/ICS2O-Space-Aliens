@@ -19,11 +19,10 @@ class SplashScene extends Phaser.Scene {
     console.log("Splash Scene");
   }
 
-  create(data) {
-  }
+  create(data) {}
 
   update(time, delta) {
-    this.scene.switch('titleScene')
+    this.scene.switch("titleScene");
   }
 }
 
