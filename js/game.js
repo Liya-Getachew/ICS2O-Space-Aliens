@@ -17,7 +17,7 @@ const titleScene = new TitleScene()
 const menuScene = new MenuScene()
 const gameScene = new GameScene()
 
-//* Game score */
+//* Game scene */
 const config = {
   type: Phaser.AUTO,
   width: 1920,
@@ -25,7 +25,7 @@ const config = {
   physics: {
     default: 'arcade',
     arcade: {
-      debug: true,
+      debug: false,
     },
   },
   // set background color
