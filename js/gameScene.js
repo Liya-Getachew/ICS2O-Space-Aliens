@@ -32,7 +32,7 @@ class GameScene extends Phaser.Scene {
   }
 
   init(data) {
-    this.cameras.main.setBackgroundColor('#ffffff')
+    this.cameras.main.setBackgroundColor('#0x5f6e7a')
   }
 
   preload() {
@@ -46,6 +46,7 @@ class GameScene extends Phaser.Scene {
     // sound
     this.load.audio('laser', 'assets/laser1.wav')
     this.load.audio('explosion', 'assets/barrelExploding.wav')
+    this.load.audio('bomb', 'assets/bomb.wav')
   }
 
   create(data) {
@@ -76,7 +77,7 @@ class GameScene extends Phaser.Scene {
 
     // Collisions between ship and aliens
     this.physics.add.collider(this.ship, this.alienGroup, function (shipCollide, alienCollide) {
-      this.sound.play('explosion')
+      this.sound.play('bomb')
       this.physics.pause()
       alienCollide.destroy()
       shipCollide.destroy()
